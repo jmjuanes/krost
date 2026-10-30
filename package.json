@@ -1,6 +1,6 @@
 {
     "name": "mirko",
-    "description": "",
+    "description": "Minimal, dependency-free task runner",
     "version": "0.0.0",
     "type": "module",
     "author": {
