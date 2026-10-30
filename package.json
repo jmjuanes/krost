@@ -17,6 +17,9 @@
         ".": "./index.js",
         "./package.json": "./package.json"
     },
+    "bin": {
+        "mirko": "./cli.js"
+    },
     "scripts": {
         "test": "node test.js"
     },
@@ -27,6 +30,7 @@
     "files": [
         "README.md",
         "LICENSE",
+        "cli.js",
         "index.js",
         "index.d.ts"
     ]
