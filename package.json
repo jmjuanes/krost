@@ -1,0 +1,33 @@
+{
+    "name": "mirko",
+    "description": "Minimal, dependency-free task runner",
+    "version": "0.0.0",
+    "type": "module",
+    "author": {
+        "name": "Josemi Juanes",
+        "email": "hello@josemi.xyz"
+    },
+    "license": "MIT",
+    "repository": "https://github.com/jmjuanes/mirko",
+    "bugs": "https://github.com/jmjuanes/mirko/issues",
+    "main": "index.js",
+    "module": "index.js",
+    "types": "index.d.ts",
+    "exports": {
+        ".": "./index.js",
+        "./package.json": "./package.json"
+    },
+    "scripts": {
+        "test": "node test.js"
+    },
+    "keywords": [
+        "tasks",
+        "task-runner"
+    ],
+    "files": [
+        "README.md",
+        "LICENSE",
+        "index.js",
+        "index.d.ts"
+    ]
+}
