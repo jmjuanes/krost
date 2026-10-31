@@ -1,6 +1,6 @@
 {
     "name": "mirko",
-    "description": "Minimal, dependency-free task runner",
+    "description": "A tiny task runner built on native Node.js streams.",
     "version": "0.0.0",
     "type": "module",
     "author": {
