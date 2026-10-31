@@ -3,10 +3,7 @@
 ![npm version](https://badgen.net/npm/v/mirko?labelColor=1d2734&color=21bf81)
 ![license](https://badgen.net/github/license/jmjuanes/mirko?labelColor=1d2734&color=21bf81)
 
-
-A Minimal, dependency-free task runner.
-
-Pipelines are made of native Node.js object streams: files are read, transformed and written one by one as they flow through, so a task can process thousands of files without loading them all in memory.
+A Minimal, dependency-free task runner. Define your tasks in a plain JavaScript file, connect `src`, `each` and `dest` into pipelines, and run them with a single command. Files flow through native Node.js object streams one by one, so thousands of them can be processed without loading them all in memory.
 
 ## Installation
 
