@@ -51,7 +51,7 @@ describe("cli", () => {
         root = await createFixture();
         tasksFile = path.join(root, "mirko.config.js");
         await fs.writeFile(tasksFile, [
-            `import { src, dest, pipeline, task, series, watch } from ${JSON.stringify(indexUrl)};`,
+            `import { src, dest, pipeline, task, series } from ${JSON.stringify(indexUrl)};`,
             `const cwd = ${JSON.stringify(root)};`,
             `task("build", () => pipeline(src("src/**/*.txt", {cwd}), dest(cwd + "/dist")));`,
             `task("default", series("build"));`,
