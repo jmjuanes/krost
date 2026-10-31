@@ -21,7 +21,7 @@
         "mirko": "./cli.js"
     },
     "scripts": {
-        "test": "node test.js"
+        "test": "node --test"
     },
     "keywords": [
         "tasks",
