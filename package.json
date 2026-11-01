@@ -1,6 +1,6 @@
 {
     "name": "krost",
-    "description": "A tiny task runner built on native Node.js streams.",
+    "description": "A tiny task runner built on native Node.js streams",
     "version": "0.0.1",
     "type": "module",
     "author": {
