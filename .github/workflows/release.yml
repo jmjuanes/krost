@@ -11,7 +11,7 @@ permissions:
 jobs:
   release:
     name: Release
-    if: ${{ github.repository == 'jmjuanes/koni' }}
+    if: ${{ github.repository == 'jmjuanes/krost' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7

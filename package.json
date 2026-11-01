@@ -1,5 +1,5 @@
 {
-    "name": "koni",
+    "name": "krost",
     "description": "A tiny task runner built on native Node.js streams.",
     "version": "0.0.1",
     "type": "module",
@@ -8,8 +8,8 @@
         "email": "hello@josemi.xyz"
     },
     "license": "MIT",
-    "repository": "https://github.com/jmjuanes/koni",
-    "bugs": "https://github.com/jmjuanes/koni/issues",
+    "repository": "https://github.com/jmjuanes/krost",
+    "bugs": "https://github.com/jmjuanes/krost/issues",
     "main": "index.js",
     "module": "index.js",
     "types": "index.d.ts",
@@ -19,7 +19,7 @@
         "./package.json": "./package.json"
     },
     "bin": {
-        "koni": "cli.js"
+        "krost": "cli.js"
     },
     "scripts": {
         "test": "node --test"

@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   publish:
-    if: ${{ github.repository == 'jmjuanes/koni' }}
+    if: ${{ github.repository == 'jmjuanes/krost' }}
     runs-on: ubuntu-latest
     env:
       NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
