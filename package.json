@@ -18,14 +18,20 @@
         "./package.json": "./package.json"
     },
     "bin": {
-        "koni": "./cli.js"
+        "koni": "cli.js"
     },
     "scripts": {
         "test": "node --test"
     },
     "keywords": [
-        "tasks",
-        "task-runner"
+        "task",
+        "runner",
+        "stream",
+        "promises",
+        "pipeline",
+        "make",
+        "tool",
+        "build"
     ],
     "files": [
         "README.md",
