@@ -11,8 +11,8 @@ export { pipeline } from "node:stream/promises";
  * Pipelines are made of native Node.js object streams.
  *
  * @example
- * // mirko.config.js
- * import { src, dest, each, pipeline, task } from "mirko";
+ * // koni.config.js
+ * import { src, dest, each, pipeline, task } from "koni";
  *
  * task("pages", () => {
  *     return pipeline(

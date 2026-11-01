@@ -1,5 +1,5 @@
 {
-    "name": "mirko",
+    "name": "koni",
     "description": "A tiny task runner built on native Node.js streams.",
     "version": "0.0.1",
     "type": "module",
@@ -8,8 +8,8 @@
         "email": "hello@josemi.xyz"
     },
     "license": "MIT",
-    "repository": "https://github.com/jmjuanes/mirko",
-    "bugs": "https://github.com/jmjuanes/mirko/issues",
+    "repository": "https://github.com/jmjuanes/koni",
+    "bugs": "https://github.com/jmjuanes/koni/issues",
     "main": "index.js",
     "module": "index.js",
     "types": "index.d.ts",
@@ -18,7 +18,7 @@
         "./package.json": "./package.json"
     },
     "bin": {
-        "mirko": "./cli.js"
+        "koni": "./cli.js"
     },
     "scripts": {
         "test": "node --test"

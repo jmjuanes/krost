@@ -26,7 +26,7 @@ const waitFor = async (check, timeout = 5000) => {
 };
 
 const createFixture = async () => {
-    const root = await fs.mkdtemp(path.join(os.tmpdir(), "mirko-"));
+    const root = await fs.mkdtemp(path.join(os.tmpdir(), "koni-"));
     const files = {
         "src/a.txt": "a",
         "src/sub/b.txt": "b",
@@ -49,7 +49,7 @@ describe("cli", () => {
 
     before(async () => {
         root = await createFixture();
-        tasksFile = path.join(root, "mirko.config.js");
+        tasksFile = path.join(root, "koni.config.js");
         await fs.writeFile(tasksFile, [
             `import { src, dest, pipeline, task, series } from ${JSON.stringify(indexUrl)};`,
             `const cwd = ${JSON.stringify(root)};`,

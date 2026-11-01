@@ -5,9 +5,9 @@ import { pathToFileURL } from "node:url";
 import { parseArgs } from "node:util";
 import { tasks, series } from "./index.js";
 
-const USAGE = `Usage: mirko [options] [task...]
+const USAGE = `Usage: koni [options] [task...]
 
-Runs the tasks registered in a mirko.config.js file, one after another.
+Runs the tasks registered in a koni.config.js file, one after another.
 If no task is given, the task named 'default' is run.
 
 Options:
@@ -24,7 +24,7 @@ const main = async () => {
             file: {
                 type: "string",
                 short: "f",
-                default: "mirko.config.js",
+                default: "koni.config.js",
             },
             list: {
                 type: "boolean",
