@@ -1,5 +1,5 @@
 {
-    "name": "mirko",
+    "name": "krost",
     "description": "A tiny task runner built on native Node.js streams.",
     "version": "0.0.1",
     "type": "module",
@@ -8,24 +8,31 @@
         "email": "hello@josemi.xyz"
     },
     "license": "MIT",
-    "repository": "https://github.com/jmjuanes/mirko",
-    "bugs": "https://github.com/jmjuanes/mirko/issues",
+    "repository": "https://github.com/jmjuanes/krost",
+    "bugs": "https://github.com/jmjuanes/krost/issues",
     "main": "index.js",
     "module": "index.js",
     "types": "index.d.ts",
     "exports": {
         ".": "./index.js",
+        "./index.js": "./index.js",
         "./package.json": "./package.json"
     },
     "bin": {
-        "mirko": "./cli.js"
+        "krost": "cli.js"
     },
     "scripts": {
         "test": "node --test"
     },
     "keywords": [
-        "tasks",
-        "task-runner"
+        "task",
+        "runner",
+        "stream",
+        "promises",
+        "pipeline",
+        "make",
+        "tool",
+        "build"
     ],
     "files": [
         "README.md",

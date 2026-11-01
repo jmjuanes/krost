@@ -6,26 +6,6 @@ import { callbackify } from "node:util";
 
 export { pipeline } from "node:stream/promises";
 
-/**
- * Minimal task runner API. Zero dependencies, requires Node.js 22+.
- * Pipelines are made of native Node.js object streams.
- *
- * @example
- * // mirko.config.js
- * import { src, dest, each, pipeline, task } from "mirko";
- *
- * task("pages", () => {
- *     return pipeline(
- *         src("src/**\/*.html"),
- *         each((file) => {
- *             file.content = file.content.toString().toUpperCase();
- *         }),
- *         dest("dist"),
- *     );
- * });
- *
- */
-
 // @description registered tasks by name
 // @type {Map<string, Task>}
 export const tasks = new Map();
