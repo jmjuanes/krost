@@ -34,7 +34,7 @@ export type TaskLike = Task | string;
 export const tasks: Map<string, Task>;
 
 export type SrcOptions = {
-    base?: string;
+    cwd?: string;
 };
 
 // Creates a stream with the files that match one or more glob patterns.
