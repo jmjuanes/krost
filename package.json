@@ -1,5 +1,5 @@
 {
-    "name": "krost",
+    "name": "mukin",
     "description": "A tiny task runner built on native Node.js streams",
     "version": "0.0.1",
     "type": "module",
@@ -8,8 +8,8 @@
         "email": "hello@josemi.xyz"
     },
     "license": "MIT",
-    "repository": "https://github.com/jmjuanes/krost",
-    "bugs": "https://github.com/jmjuanes/krost/issues",
+    "repository": "https://github.com/jmjuanes/mukin",
+    "bugs": "https://github.com/jmjuanes/mukin/issues",
     "main": "index.js",
     "module": "index.js",
     "types": "index.d.ts",
@@ -19,7 +19,7 @@
         "./package.json": "./package.json"
     },
     "bin": {
-        "krost": "cli.js"
+        "mukin": "cli.js"
     },
     "scripts": {
         "test": "node --test"

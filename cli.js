@@ -5,9 +5,9 @@ import { pathToFileURL } from "node:url";
 import { parseArgs } from "node:util";
 import { tasks, series } from "./index.js";
 
-const USAGE = `Usage: krost [options] [task...]
+const USAGE = `Usage: mukin [options] [task...]
 
-Runs the tasks registered in a krost.config.js file, one after another.
+Runs the tasks registered in a mukin.config.js file, one after another.
 If no task is given, the task named 'default' is run.
 
 Options:
@@ -24,7 +24,7 @@ const main = async () => {
             file: {
                 type: "string",
                 short: "f",
-                default: "krost.config.js",
+                default: "mukin.config.js",
             },
             list: {
                 type: "boolean",

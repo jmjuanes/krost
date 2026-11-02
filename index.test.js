@@ -28,7 +28,7 @@ const collect = async (...streams) => {
 // Creates a temporary directory with some source files.
 // @returns {Promise<string>} Path of the directory.
 const createFixture = async () => {
-    const root = await fs.mkdtemp(path.join(os.tmpdir(), "krost-"));
+    const root = await fs.mkdtemp(path.join(os.tmpdir(), "mukin-"));
     const files = {
         "src/a.txt": "a",
         "src/sub/b.txt": "b",

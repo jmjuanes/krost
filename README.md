@@ -1,7 +1,7 @@
-# krost
+# mukin
 
-![npm version](https://badgen.net/npm/v/krost?labelColor=1d2734&color=21bf81)
-![license](https://badgen.net/github/license/jmjuanes/krost?labelColor=1d2734&color=21bf81)
+![npm version](https://badgen.net/npm/v/mukin?labelColor=1d2734&color=21bf81)
+![license](https://badgen.net/github/license/jmjuanes/mukin?labelColor=1d2734&color=21bf81)
 
 A Minimal, dependency-free task runner. Define your tasks in a plain JavaScript file, connect `src`, `each` and `dest` into pipelines, and run them with a single command. Files flow through native Node.js object streams one by one, so thousands of them can be processed without loading them all in memory.
 
@@ -10,17 +10,17 @@ A Minimal, dependency-free task runner. Define your tasks in a plain JavaScript 
 Install it locally in your project, so your tasks file and the CLI share the same copy of the library.
 
 ```bash
-npm install --save-dev krost
+npm install --save-dev mukin
 ```
 
 Requires Node.js 22 or later.
 
 ## Usage
 
-Create a `krost.config.js` file in your project:
+Create a `mukin.config.js` file in your project:
 
 ```js
-import { src, dest, each, pipeline, task, series, parallel } from "krost";
+import { src, dest, each, pipeline, task, series, parallel } from "mukin";
 
 task("pages", () => {
     return pipeline(
@@ -41,17 +41,17 @@ task("default", series("build"));
 Then run it:
 
 ```bash
-npx krost              # runs the "default" task
-npx krost build        # runs "build"
-npx krost pages assets # runs "pages", then "assets"
-npx krost --list       # lists the available tasks
+npx mukin              # runs the "default" task
+npx mukin build        # runs "build"
+npx mukin pages assets # runs "pages", then "assets"
+npx mukin --list       # lists the available tasks
 ```
 
 ### CLI options
 
 | Option | Description |
 | --- | --- |
-| `-f`, `--file <path>` | Tasks file to load. Default: `krost.config.js` |
+| `-f`, `--file <path>` | Tasks file to load. Default: `mukin.config.js` |
 | `-l`, `--list` | List the available tasks |
 | `-h`, `--help` | Show the help |
 
@@ -59,7 +59,7 @@ npx krost --list       # lists the available tasks
 
 ### `task(name, fn)`
 
-Registers a task. `fn` can be sync or async. If it returns a promise, or a stream, the task finishes when that promise or stream does. Always `return` it, otherwise `krost` cannot wait for it.
+Registers a task. `fn` can be sync or async. If it returns a promise, or a stream, the task finishes when that promise or stream does. Always `return` it, otherwise `mukin` cannot wait for it.
 
 ### `pipeline(...streams)`
 
